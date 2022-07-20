@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
 :root {
-    --clr-main-bg: #00003d;
-    --clr-accent: #0073bb;
-    --clr-light: #fff;
+    --clr-main-bg: black;
+    --clr-accent: #fbbc05;
+    --clr-light: rgb(215, 215, 215);
     --clr-bright: #bdbdbd;
-    --clr-medium: #9eadc2;
+    --clr-medium: #ababab;
     --animation: 0.3s ease-in-out;
 }
 
@@ -59,7 +59,7 @@ main {
 main section {
     width: 90%;
     max-width: 1400px;
-    background-color: #00003d;
+    background-color: var(--clr-main-bg);
     border-radius: 12px;
     /* padding: 6rem 4rem;
     margin: auto; */
@@ -260,7 +260,7 @@ button {
 
 .btn a:hover,
 .btn a:focus {
-    background-color: #0795ee;
+    background-color: #e09900;
 }
 
 /* @media only screen and (max-width: 1024px) {
