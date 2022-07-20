@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+:root {
+  --clr-main-bg: black;
+  --clr-main-theme: #fbbc05;
+  --clr-text: rgb(170, 169, 169);
+  --clr-hover: #e09900;
+  --clr-light: rgb(192, 189, 189);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  /* color: white; */
+}
+
+html,
+body {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-color: var(--clr-main-bg);
+  /* position: relative; */
+  /* line-height: 1.5;s */
+}
+
+main {
+  padding: 0 4rem;
+}
+
+main .hero {
+  /* margin-top: 12rem; */
+  padding-top: 4rem;
+  /* width: 50%;
+  max-width: 600px; */
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  place-items: center;
+  gap: 4rem;
+  /* position: relative;
+  z-index: 100; */
+}
+
+main h1,
+main h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.075;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-size: 2.35rem;
+}
+
+.landing-hero p {
+  font-size: 1.175rem;
+  color: var(--clr-text);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.landing-hero h1 span {
+  position: relative;
+}
+
+.landing-hero h1 span::before,
+.landing-hero h1 span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.landing-hero h1 span::after {
+  background-color: var(--clr-main-bg);
+  animation: animate 3s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate {
+  to {
+    left: 100%;
+  }
+}
+
+.hero .get-started a {
+  font-size: 1.075rem;
+  font-weight: bold;
+}
+
+.hero .landing-img {
+  /* border: 1px solid white; */
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  max-height: 450px;
+}
+
+main img {
+  display: inline-block;
+  /* border: 1px solid rgb(63, 63, 63); */
+  /* outline-offset: -8px; */
+}
+
+.hero .landing-img :is(.one, .two, .three) {
+  position: absolute;
+  width: 60%;
+}
+
+.hero .landing-img .one {
+  top: 0;
+  left: 15%;
+  z-index: 1;
+  width: 50%;
+}
+
+.hero .landing-img .two {
+  top: 62%;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.hero .landing-img .three {
+  bottom: -10%;
+  left: 3%;
+  z-index: 3;
+}
+
+main .below-hero {
+  margin: 4rem 0;
+}
+
+.below-hero .about-heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.below-hero .about-heading .heading-img {
+  /* border: 1px solid grey;
+    padding: 2rem 0;
+    background-color: #1c1c1c; */
+  text-align: center;
+  /* border-radius: 8px; */
+}
+
+.about-heading .heading-img img {
+  border-radius: 50px;
+}
+
+.sub-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--clr-main-theme);
+}
+
+.heading-content .heading-description {
+  color: var(--clr-text);
+  line-height: 1.5;
+  font-size: 1.095rem;
+}
+
+main .hero-menu-cards {
+  margin: 6rem 0 4rem;
+}
+
+main .hero-menu-cards .container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-menu-cards .container img {
+  border-radius: 60px;
+  margin-bottom: 1rem;
+}
+
+.hero-menu-cards .container h4,
+.hero-menu-cards .container p {
+  color: var(--clr-light);
+  margin-bottom: 6px;
+}
+
+.hero-menu-cards .container h4 {
+  color: white;
+  font-size: 1.175rem;
+}
+
+.hero-menu-cards .container .rating {
+  color: var(--clr-main-theme);
+  letter-spacing: 1ch;
+}
+
+.hero-menu-cards .container .price {
+  font-weight: 800;
+}
+
+.categories .cat-container {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 4rem;
+}
+
+.categories .cat-container > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.categories .cat-container .cat-img {
+  text-align: center;
+}
+
+.categories .cat-container .cat-img img {
+  border-radius: 30px;
+}
+
+.categories .cat-container .cat-description {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cat-container .cat-description h5 {
+  font-size: 1.35rem;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.cat-container .cat-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--clr-text);
+}
+
+.cat-container .cat-description .order-now {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+main .our-menu {
+  margin: 4rem 0;
+}
+
+.our-menu .our-menu-container {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.our-menu .our-menu-container img {
+  display: block;
+  outline: 1px solid white;
+  outline-offset: -10px;
+}
+
+/* .our-menu-container .menu-col-1 img {
+    height: 430px;
+    width: 400px;
+} */
+
+.our-menu-container .menu-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.our-menu-container .menu-col-2 img {
+  margin: auto;
+  /* height: 200px;
+    width: 200px; */
+}
+
+main .discount-card {
+  margin: 4rem 0;
+}
+
+.discount-card .discount-container {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+}
+
+.discount-card .discount-container h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: 0;
+  /* color: var(--clr-main-theme); */
+}
+
+.discount-card .discount-container p {
+  font-size: 1.125rem;
+}
+
+.discount-card .discount-container p span {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 800;
+  margin-right: 0.5rem;
+  padding: 4px 10px;
+  border: 1px solid var(--clr-main-theme);
+}
+
+.discount-card .discount-container button a {
+  font-size: 1.25rem;
+  font-weight: bold;
+}

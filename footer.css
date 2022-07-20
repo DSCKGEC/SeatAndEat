@@ -1,0 +1,115 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    margin: 4rem 4rem 0;
+    /* background-color: #232323; */
+    border-top: 1px solid white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: var(--clr-light);
+    line-height: 1.5;
+}
+
+.footer-container a {
+    color: var(--clr-light);
+}
+
+.footer-container h2 {
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    position: relative;
+    color: white;
+}
+
+.footer-container h2::after {
+    content: '';
+    height: 1px;
+    width: 75%;
+    display: block;
+    background-color: var(--clr-main-theme);
+    position: absolute;
+    top: 115%;
+    left: 0;
+}
+
+footer .about-us .company-name {
+    font-weight: bold;
+    font-size: 1.175rem;
+    margin-bottom: 0.325rem;
+}
+
+footer .about-us .company-description {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+footer .about-us i, 
+footer .contact-us i {
+    margin-right: 10px;
+}
+
+footer .contact-us li {
+    line-height: 1.75;
+}
+
+footer .contact-us a {
+    transition: 0.25s ease-in-out;
+}
+
+footer .contact-us a:hover {
+    color: white;
+}
+
+footer .follow-us .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.follow-us .social-links a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--clr-text);
+    border-radius: 50%;
+    /* background-color: #1d1d1d; */
+    font-size: 1.125rem;
+    transition: 0.25s ease-in-out;
+}
+
+.follow-us .social-links a:hover {
+    color: white;
+    border-color: white;
+    background-color: #1d1d1d;
+}
+
+footer .copyright {
+    font-size: 1.25rem;
+    font-weight: 300;
+    /* background-color: #1d1d1d; */
+    border-top: 1px solid var(--clr-main-theme);
+    padding: 0.75rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    text-align: center;
+    /* width: calc(4rem + 100% + 4rem); */
+}
