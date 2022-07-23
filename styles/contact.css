@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    background: var(--clr-main-bg);
     width: 100vw;
     min-height: 100vh;
     font-size: 16px;
@@ -70,6 +71,8 @@ main section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem;
+    margin-top: 4rem;
+    
 }
 
 .information-container {
