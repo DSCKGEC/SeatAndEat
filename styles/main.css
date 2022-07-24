@@ -96,7 +96,7 @@ main h2 {
 
 .landing-hero h1 span::after {
   background-color: var(--clr-main-bg);
-  animation: animate 3s infinite;
+  animation: animate 3s forwards;
   animation-delay: 0.5s;
 }
 
@@ -239,6 +239,7 @@ main .hero-menu-cards .container {
 .categories .cat-container .cat-img {
   text-align: center;
 }
+
 
 .categories .cat-container .cat-img img {
   border-radius: 30px;
