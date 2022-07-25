@@ -96,10 +96,13 @@ footer .follow-us .social-links {
     transition: 0.25s ease-in-out;
 }
 
+
 .follow-us .social-links a:hover {
     color: white;
     border-color: white;
     background-color: #1d1d1d;
+    /* a size variation to make it look better */
+    transform:scale(1.118);
 }
 
 footer .copyright {
