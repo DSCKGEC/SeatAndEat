@@ -113,3 +113,22 @@ footer .copyright {
     text-align: center;
     /* width: calc(4rem + 100% + 4rem); */
 }
+
+@media screen and (max-width:700px){
+    /* for medium and smaller screens making the footer a flexbox and all content will be centered inside it */
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        width:100vw;
+    }
+    .footer-container h2{
+        font-size:1.6rem;
+    }
+    .footer-container h2::after{
+        width:100%;
+    }
+}
