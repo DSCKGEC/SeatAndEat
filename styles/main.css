@@ -240,7 +240,6 @@ main .hero-menu-cards .container {
   text-align: center;
 }
 
-
 .categories .cat-container .cat-img img {
   border-radius: 30px;
 }
@@ -343,6 +342,11 @@ main .discount-card {
   font-size: 1.25rem;
   font-weight: bold;
 }
-.bottom-img{
+.bottom-img {
   width: 250px;
+}
+
+.ahmed {
+  display: flex;
+  flex-direction: row;
 }
