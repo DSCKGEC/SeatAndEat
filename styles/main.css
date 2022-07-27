@@ -34,15 +34,17 @@ body {
   font-family: "Nunito", sans-serif;
   color: white;
   background-color: var(--clr-main-bg);
+  min-width: 100%;
   /* position: relative; */
   /* line-height: 1.5;s */
 }
 
 main {
+  width: 100vmax;
   padding: 0 4rem;
 }
 
-main .hero {
+.hero {
   /* margin-top: 12rem; */
   padding-top: 4rem;
   /* width: 50%;
@@ -53,22 +55,61 @@ main .hero {
   align-items: flex-start;
   justify-content: center; */
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: repeat(2,1fr);
   place-items: center;
   gap: 4rem;
   /* position: relative;
   z-index: 100; */
 }
 
-main h1,
-main h2 {
+@media only screen and (max-width:950px){
+  main{
+    width: 100vmax;
+  }  
+  .hero{
+    grid-template-columns: max-content;
+  }
+  .landing-img :is(.one, .two, .three) {
+    position: relative;
+    display: flex ;
+    width: 100%;
+  }
+  
+  .one {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    min-width: 150%;
+    height: 60%;
+  }
+  
+  .two {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    min-width: 150%;
+    /* width: 100%; */
+  }
+  
+  .three {
+    height: 50%;
+    min-width: 150%;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+
+ h1,
+ h2 {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.075;
   margin-bottom: 1rem;
 }
 
-main h2 {
+ h2 {
   font-size: 2.35rem;
 }
 
@@ -106,39 +147,39 @@ main h2 {
   }
 }
 
-.hero .get-started a {
+ .get-started a {
   font-size: 1.075rem;
   font-weight: bold;
 }
 
-.hero .landing-img {
+ .landing-img {
   /* border: 1px solid white; */
   position: relative;
   text-align: center;
-  height: 100%;
-  width: 100%;
+  height: 35vh;
+  width: 35vw;
   max-height: 450px;
 }
 
-main img {
+ img {
   display: inline-block;
   /* border: 1px solid rgb(63, 63, 63); */
   /* outline-offset: -8px; */
 }
 
-.hero .landing-img :is(.one, .two, .three) {
+.landing-img :is(.one, .two, .three) {
   position: absolute;
   width: 60%;
 }
 
-.hero .landing-img .one {
+.one {
   top: 0;
   left: 15%;
   z-index: 1;
   width: 50%;
 }
 
-.hero .landing-img .two {
+ .two {
   top: 62%;
   right: 0;
   z-index: 2;
@@ -146,13 +187,13 @@ main img {
   width: 50%;
 }
 
-.hero .landing-img .three {
+.three {
   bottom: -10%;
   left: 3%;
   z-index: 3;
 }
 
-main .below-hero {
+ .below-hero {
   margin: 4rem 0;
 }
 
@@ -186,11 +227,11 @@ main .below-hero {
   font-size: 1.095rem;
 }
 
-main .hero-menu-cards {
+ .hero-menu-cards {
   margin: 6rem 0 4rem;
 }
 
-main .hero-menu-cards .container {
+ .hero-menu-cards .container {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -267,7 +308,6 @@ main .hero-menu-cards .container {
   margin-top: 1rem;
   font-weight: 700;
 }
-
 main .our-menu {
   margin: 4rem 0;
 }
@@ -303,7 +343,7 @@ main .our-menu {
     width: 200px; */
 }
 
-main .discount-card {
+ .discount-card {
   margin: 4rem 0;
 }
 
