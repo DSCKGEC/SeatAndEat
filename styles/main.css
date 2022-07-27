@@ -60,6 +60,19 @@ main .hero {
   z-index: 100; */
 }
 
+@media only screen and (max-width:850px) {
+  main .hero{
+    display: grid;
+    width: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column dense;
+    align-items: center;
+    /* grid-auto-rows: 500px; */
+    grid-auto-columns: 500px;
+  }
+}
+
 main h1,
 main h2 {
   font-size: 3.5rem;
@@ -344,9 +357,4 @@ main .discount-card {
 }
 .bottom-img {
   width: 250px;
-}
-
-.ahmed {
-  display: flex;
-  flex-direction: row;
 }
