@@ -111,12 +111,6 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-<<<<<<< HEAD
-=======
-  }
-
-  @media only screen and (max-width: 615px) {
-    /* For mobile phones: */
->>>>>>> 98a72d8542ca3324c43b5d938a6d9dbb4e022702
   }
 }
+
