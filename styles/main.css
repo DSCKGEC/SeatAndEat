@@ -346,3 +346,39 @@ main .discount-card {
 .bottom-img{
   width: 250px;
 }
+main .hero-menu-cards .container .card img{
+  width: 100%;
+}
+main .hero-menu-cards .container .card{
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:769px)
+{
+  main .hero-menu-cards .container {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    main .hero-menu-cards .container .card{
+      width: 100%;
+    }
+
+    main .hero-menu-cards .container .card img{
+      width: 70%;
+    }
+
+    main .hero-menu-cards h2{
+      font-size: 2em;
+    }
+    main .hero-menu-cards .sub-title{
+      font-size: 1em;
+    }
+    main .hero-menu-cards{
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+}
