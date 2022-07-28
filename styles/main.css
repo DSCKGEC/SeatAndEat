@@ -199,7 +199,7 @@ main .hero-menu-cards .container {
 }
 
 .hero-menu-cards .container img {
-  border-radius: 60px;
+  border-radius: 40px;
   margin-bottom: 1rem;
 }
 
@@ -349,8 +349,16 @@ main .discount-card {
 main .hero-menu-cards .container .card img{
   width: 100%;
 }
+main .hero-menu-cards .container .card .different-curry{
+  width: 100%;
+  height: 63%;
+}
+main .hero-menu-cards .container .card .different-pizza{
+  width: 100%;
+  height: 63%;
+}
 main .hero-menu-cards .container .card{
-  width: 75%;
+  width: 350px;
   margin: 0 auto;
 }
 
@@ -371,6 +379,14 @@ main .hero-menu-cards .container .card{
       width: 70%;
     }
 
+    main .hero-menu-cards .container .card .different-curry {
+      width: 70%;
+    }
+
+    main .hero-menu-cards .container .card .different-pizza {
+      width: 70%;
+    }
+    
     main .hero-menu-cards h2{
       font-size: 2em;
     }
