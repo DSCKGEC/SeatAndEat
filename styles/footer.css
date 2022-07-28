@@ -12,27 +12,28 @@ footer {
     border-top: 1px solid white;
 }
 
-.contact-us{
-    padding-left: 1.5em;
-}
-
 .footer-container {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 4rem;
     /* justify-content: center; */
     /* align-items: center; */
     width: 100%;
     max-width: 1200px;
-    margin: 0;
+    margin: auto;
+    color: var(--clr-light);
+    line-height: 1.5;
+}
+
+.footer-container a{
     color: var(--clr-light);
 }
 
-
 .footer-container h2 {
     font-size: 1.75rem;
+    letter-spacing: 2px;
     margin-bottom: 2rem;
     position: relative;
     color: white;
