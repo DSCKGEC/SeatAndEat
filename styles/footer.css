@@ -20,6 +20,7 @@ footer {
     gap: 4rem;
     /* justify-content: center; */
     /* align-items: center; */
+    padding: 2rem 4rem;
     width: 100%;
     max-width: 1200px;
     margin: auto;
