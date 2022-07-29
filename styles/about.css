@@ -102,7 +102,7 @@
   width: 63%;
 }
 
-.about-us-container {
+body {
   background: var(--clr-main-bg);
 }
 
@@ -113,14 +113,21 @@
 
   .about-us-heading {
     font-size: var(--fs-header);
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 }
 
 @media only screen and (min-width: 751px) {
+  .about-us-col-img {
+    padding: 0;
+    margin: 0;
+    animation-play-state: paused;
+  }
+
   .about-us-container {
     display: flex;
     flex-direction: column;
+    gap: 0;
     padding-top: 8em;
   }
 
@@ -137,34 +144,24 @@
   .about-us-image {
     margin: 0;
     padding: 0;
-    width: 35%;
+    max-width: 35%;
   }
 
   .about-us-col-text {
-    padding-right: 3em;
-    position: relative;
-    top: -25%;
+    padding-right: 4em;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1010px) {
-  .about-us-col-text {
-    padding-right: 3em;
-    position: relative;
-    top: -35%;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    position: absolute;
+    top: 10em;
   }
 }
 
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1050px) {
   .about-us-col-text {
-    padding-right: 3em;
-    position: relative;
-    top: -55%;
+    padding-right: 4em;
     padding-bottom: 0;
     margin-bottom: 0;
+    position: absolute;
+    top: 6em;
   }
 }
