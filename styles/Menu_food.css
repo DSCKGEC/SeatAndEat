@@ -169,7 +169,7 @@
     background-color: black;
 }
 .card:hover{
-    border: 2px solid black;
+    border: 2px solid #fbbc05;
 }
 .discription{
     color: white;
@@ -177,6 +177,7 @@
     font-weight: 450;
     text-align: left;
     border-bottom: 3px solid #fbbc05;
+    height: 150px;
     padding: 10px;
 }
 .item-name{
@@ -212,4 +213,11 @@
     font-size: 20px;
     font-weight: 500;
     margin-left: 60px;
+}
+.card-container{
+    float: left;
+    padding: 39px;
+    height: fit-content;
+    width: fit-content;
+
 }
