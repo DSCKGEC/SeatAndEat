@@ -75,8 +75,20 @@
     align-items: center;
     flex-direction: column;
     max-width: 45%;
+    animation-name: about-us-col-img;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
-  
+    @keyframes about-us-col-img{
+    0%{
+      margin-top: 10%;
+    }
+    50%{
+      margin-top: 0%;
+    }
+    100%{
+      margin-top: 10%;
+    }
   .about-us-image {
     width: 63%;
   }
