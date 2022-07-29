@@ -381,6 +381,7 @@ main .hero-menu-cards .container .card{
 
     main .hero-menu-cards .container .card .different-curry {
       width: 70%;
+      height: 63%;
     }
 
     main .hero-menu-cards .container .card .different-pizza {
@@ -397,4 +398,31 @@ main .hero-menu-cards .container .card{
       padding-top: 1em;
       padding-bottom: 1em;
     }
+}
+
+@media only screen and (min-width:770px){
+  main .hero-menu-cards .container {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+  main .hero-menu-cards .container .card .different-curry {
+      height: 67%;
+    }
+}
+
+@media only screen and (min-width:1201px) {
+  main .hero-menu-cards .container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+  main .hero-menu-cards .container .card .different-curry {
+    width: 70%;
+    height: 63%;
+  }
 }
