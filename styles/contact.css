@@ -220,7 +220,7 @@ main section {
 }
 
 .name .input,
-.email .input {
+.email .input  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,4 +322,9 @@ button {
         padding: 2rem 1.5rem;
     }
 
+}
+ .number {
+    display: flexbox;
+    border: 2px;
+    border-style:outset;
 }
