@@ -113,7 +113,7 @@ a {
     height: 100%;
 }
 
-.nav-content ul {
+.navbar .nav-content ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -200,7 +200,133 @@ button {
     display: none;
 }
 
-@media only screen and (max-width:768px){
+
+
+
+/*------------------- Responsive Navbar -------------------*/
+
+header .navbar .mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+
+@media (max-width: 850px) {
+
+    .nav-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-content ul{
+        display: flex;
+        flex-direction: column;
+    }
+    /* header .navbar .nav-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        right: 0px;
+        top: 0;
+        width: 500px;
+        height: 100%;
+        box-shadow: -1px 20px 1000px #d4be81;
+        background-color: var(--clr-main-bg);
+        transition: 1s ease;
+    } */
+    header .navbar .active{
+        top: 0!important;
+    }
+    header .navbar .nav-content{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: -410px;
+        padding: 30px 0;
+        font-size: 1.15rem;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: var(--clr-main-bg);
+        /* background-color: var(--clr-main-theme); */
+        height: 400px;
+        transition: .6s;
+    }
+
+    #close{
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        /* border: 2px solid black;
+        background-color: black;
+        padding: 15px 20px;
+        border-radius: 45px; */
+        color: black;
+        border: 2px solid #fcfbfb;
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 40px;
+    }
+    /* .nav-content .btn{
+        border: 2px solid black;
+    } */
+    header .navbar .mobile{
+        display: block;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .navbar{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .mobile i {
+        font-size: 1.7rem;
+    }
+    header .navbar .nav-content{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width:768px){
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -295,4 +421,4 @@ button {
     /* .nav-toggle-button:focus span {
         background-color: var(--clr-main-light)
     } */
-}
+/* } */ 
