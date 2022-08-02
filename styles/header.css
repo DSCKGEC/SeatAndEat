@@ -215,6 +215,9 @@ header .navbar .mobile{
 
 @media (max-width: 850px) {
 
+    .navbar{
+        padding: .5rem 2rem;
+    }
     .nav-content{
         display: flex;
         flex-direction: column;
@@ -282,10 +285,10 @@ header .navbar .mobile{
 
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
 
     .navbar{
-        padding: 1rem 1.5rem;
+        padding: .5rem 1.5rem;
         font-size: 1rem;
         display: flex;
         align-items: center;
