@@ -13,6 +13,8 @@ footer {
 }
 
 .footer-container {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
@@ -117,6 +119,7 @@ footer .copyright {
     /* width: calc(4rem + 100% + 4rem); */
 }
 
+
 @media screen and (max-width:700px){
     /* for medium and smaller screens making the footer a flexbox and all content will be centered inside it */
     .footer-container{
@@ -135,3 +138,38 @@ footer .copyright {
         width:100%;
     }
 }
+
+
+@media only screen and (max-width:769px)
+{
+.footer-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2em;
+}
+.about-us,.follow-us,.contact-us{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container h2{
+    font-size: 1.em;
+    padding: 0;
+}
+
+.follow-us{
+    padding-bottom: 1.5em;
+}
+
+.about-us h2{
+    padding-top: 1.5em;
+}
+
+.copyright p{
+    font-size: .8em;
+}
+}
+
