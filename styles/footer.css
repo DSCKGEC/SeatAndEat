@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root{
+--clr-main-bg:black;
+--clr-main-theme:#fbbc05;
+--clr-text:rgb(170,169,169);
+--clr-hover:#e09900;
+--clr-light:rgb(192,189,189);
+}
+
 footer {
     margin: 4rem 4rem 0;
     /* background-color: #232323; */
