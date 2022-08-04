@@ -267,6 +267,10 @@ button {
     background-color: #e09900;
 }
 
+footer .copyright p{
+     font-size:1.25rem;
+}
+
 /* @media only screen and (max-width: 1024px) {
     a {
         transition: linear;
