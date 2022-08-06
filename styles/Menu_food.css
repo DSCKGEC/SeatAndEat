@@ -123,6 +123,11 @@
     background: #fff;
 }
 
+/* added the body background for having the same color as footer */
+body{
+    background:black;
+}
+
 @media only screen and (max-width: 767px) {
     .navbar-nav {
         text-align: center;
