@@ -46,12 +46,14 @@
 }
 
 .carousel-caption h5 {
-    font-size: 45px;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
     color: #fff;
     font-weight: bolder;
+     font-weight: 702;
+     font-family: "Nunito", sans-serif; 
     /* background-color: #fff; */
 }
 
@@ -65,23 +67,48 @@
 }
 
 .carousel-caption span {
-    width: 60%;
+    width: 45%;
     margin: auto;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.9;
     color: #fff;
     font-weight: bolder;
+    font-family:  "Segoe UI", Arial, sans-serif; 
     /* background-color: black; */
 }
 
 .carousel-caption a {
     text-transform: uppercase;
     text-decoration: none;
-    background: darkorange;
-    padding: 10px 30px;
+    background:#fbbc05;
+    padding: 15px 35px;
+     border-radius: 10px;
     display: inline-block;
-    color: #000;
+    color: white;
+     font-family:  " Arial", sans-serif; 
+    font-weight: 250;
     margin-top: 15px;
+     position: relative;
+    z-index: 1;
+}
+.carousel-caption a::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: transform 300ms ease-in;
+}
+.carousel-caption a::after{
+    transform: scale(0);
+    transform-origin: center;
+}
+.carousel-caption a:hover:after{
+    transform: scale(1);
+     border-radius: 10px;
 }
 
 .navbar-nav a {
