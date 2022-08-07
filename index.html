@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="styles/foodcategory.css">
@@ -28,8 +29,12 @@
                     <li><a href="./views/about.html">ABOUT</a></li>
                     <li><a href="./views/Menu_food.html">MENU</a></li>
                     <li><a href="./views/contact.html">CONTACT</a></li>
+                    <li><i id="close" class="fa-solid fa-xmark"></i></li>
                 </ul>
                 <button class="btn order"><a href="#">ORDER</a></button>
+            </div>
+            <div class="mobile">
+                <i class="bar fa-solid fa-utensils"></i>
             </div>
         </nav>
     </header>
@@ -61,39 +66,38 @@
             <p class="sub-title">POPULAR DISH</p>
                 <h2>What's Trending</h2>
             <div class="container">
-                <div class="card">
-                    <img src="./assets/chicken-curry-2.jpg" alt="chicken" class="different-curry" >
+                <div class="">
+                    <img src="./assets/chicken-curry-2.jpg" alt="chicken" style="width: 100%; height: 60%;" >
                     <h4>Chicken Curry</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 100 /-</p>
                 </div>
-                <div class="card">
-                    <img src="./assets/Kolkata-chicken-biryani.jpg" alt="biryani" >
+                <div class="">
+                    <img src="./assets/Kolkata-chicken-biryani.jpg" alt="biryani" style="width:100%" >
                     <h4>Biryani</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 120 /-</p>
-                    
                 </div>
-                <div class="card">
-                    <img src="./assets/pizza-2.jpg" alt="pizza" class="different-pizza">
+                <div class="">
+                    <img src="./assets/pizza-2.jpg" alt="pizza" style="width:100%" >
                     <h4>Pizza</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 110 /-</p>
                 </div>
-                <div class="card">
-                    <img src="./assets/Spring-roll.jpg" alt="Spring-roll" >
+                <div class="">
+                    <img src="./assets/Spring-roll.jpg" alt="Spring-roll" style="width:100%" >
                     <h4>Spring-roll</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 90 /-</p>
                 </div>
-                <div class="card">
-                    <img src="./assets/Ravioli.jpg" alt="Ravioli" >
+                <div class="">
+                    <img src="./assets/Ravioli.jpg" alt="Ravioli" style="width:100%" >
                     <h4>Ravioli</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 150 /-</p>
                 </div>
-                <div class="card">
-                    <img src="./assets/Chowmein_Menu.jpg" alt="Chowmein" >
+                <div class="">
+                    <img src="./assets/Chowmein_Menu.jpg" alt="Chowmein" style="width:100%" >
                     <h4>Chowmein</h4>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     <p class="price"><i class="fas fa-rupee-sign"></i> 100 /-</p>
@@ -205,4 +209,5 @@
     </footer>
     
 </body>
+<script src="js/nav.js"></script>
 </html>
