@@ -12,15 +12,28 @@
     }
 } */
 @media (max-width:778px){
-    .categories .cat-container .col-l-4{
+    .categories .cat-container .col-l-4 {
         display:block;
     }
-    .categories .cat-container .col-l-4 .cat-description{
-        width:100%;
-        text-align: center;
+    .moveupindian{
+        position:relative;
+        top:-240px;
     }
-    .categories .cat-container .col-l-4 .cat-description .btn{
-        width:100%;
+    .fixedindian{
+        position:relative;
+        top:275px;
+    }
+    .moveupitalian{
+        position:relative;
+        top:-225px;
+    }
+    .fixeditalian{
+        position:relative;
+        top:325px;        
+    }
+    .categories .cat-container .cat-description{
+        text-align: center;
+        width:400px;
     }
 }
 
