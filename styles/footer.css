@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root{
+--clr-main-bg:black;
+--clr-main-theme:#fbbc05;
+--clr-text:rgb(170,169,169);
+--clr-hover:#e09900;
+--clr-light:rgb(192,189,189);
+}
+
 footer {
     margin: 4rem 4rem 0;
     /* background-color: #232323; */
@@ -98,10 +106,13 @@ footer .follow-us .social-links {
     transition: 0.25s ease-in-out;
 }
 
+
 .follow-us .social-links a:hover {
     color: white;
     border-color: white;
     background-color: #1d1d1d;
+    /* a size variation to make it look better */
+    transform:scale(1.118);
 }
 
 footer .copyright {
@@ -115,7 +126,6 @@ footer .copyright {
     text-align: center;
     /* width: calc(4rem + 100% + 4rem); */
 }
-
 
 @media only screen and (max-width:769px)
 {
@@ -149,3 +159,4 @@ footer .copyright {
     font-size: .8em;
 }
 }
+

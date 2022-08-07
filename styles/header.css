@@ -18,6 +18,7 @@
 }
 
 html, body {
+    background-color: black;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
@@ -424,4 +425,6 @@ header .navbar .mobile{
     /* .nav-toggle-button:focus span {
         background-color: var(--clr-main-light)
     } */
+
 /* } */ 
+
