@@ -23,30 +23,4 @@
         width:100%;
     }
 }
-@media (min-width:779px) and(max-width:991px){
-    .categories .cat-container,.categories .cat-container .cat-description{
-        gap:1.5rem;
-    }
-    .categories .cat-container .col-l-4 .cat-description{
-        width:100%;
-    }
-}
-@media (min-width:992px) and (max-width:1365px){
-    .categories .cat-container .cat-description{
-        width:100%;
-    }
-}
-@media (min-width:1366px){
-    .categories .cat-container{
-        grid-template-columns: repeat(2,auto);
-        gap:2.1rem;
-
-    }
-    .categories .cat-container .col-l-4{
-        gap:2rem;
-    }
-    .categories .cat-container .cat-description{
-        width:min(100%,535px);
-    }
-}
 
