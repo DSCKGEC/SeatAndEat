@@ -155,7 +155,8 @@ body{
     background:black;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
+
     .navbar-nav {
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
@@ -173,6 +174,24 @@ body{
         padding: 10px 15px;
         font-size: 15px;
     }
+
+} */
+
+
+
+
+
+
+/* @media only screen and (max-width: 770px) {
+
+    .nav-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+} */
+
+
 }
 .menu-card-container{
     margin: 30px 40px 0px 40px;
@@ -253,3 +272,4 @@ body{
     width: fit-content;
 
 }
+
